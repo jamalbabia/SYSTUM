@@ -617,7 +617,7 @@ message.channel.sendEmbed(cat);
 });
 
 client.on('message', message => {
-var prefix = "^^";
+var prefix = "لالالا";
 
     if (message.author.id === client.user.id) return;
     if (message.guild) {
