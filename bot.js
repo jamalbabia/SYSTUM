@@ -27,7 +27,7 @@ client.on("message", message => {
    message.react("😜")
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .addField("『88』 『اسم البوت』", true)
+      .addField("『✖crew』 『اسم البوت』", true)
       
       .addField("『88#0808』『مصمم البوت』", true)
       
@@ -1580,6 +1580,8 @@ client.on('message',async message => {
   }
 }); 
 
-
+client.on('guildMemberAdd', member=> {
+    member.addRole(member.guild.roles.find("name","✖Closers"));
+    });
 
 client.login(process.env.TOKEN);
