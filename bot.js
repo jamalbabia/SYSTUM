@@ -1581,7 +1581,7 @@ client.on('message',async message => {
 }); 
 
 client.on('guildMemberAdd', member=> {
-    member.addRole(member.guild.roles.find("name","✖Closers"));
+    member.addRole(member.guild.roles.find("name","members"));
     });
 
 client.login(process.env.TOKEN);
